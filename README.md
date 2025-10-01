@@ -10,10 +10,10 @@ A arquitetura da solução é composta por dois componentes principais:
 
 1. **Aplicação Java Spring Boot**:
    - A aplicação Java Spring Boot será empacotada em um container Docker.
-   - Ela se conecta a um banco de dados MySQL rodando em um container separado (no local ou na nuvem).
+   - Ela se conecta a um banco de dados MySQL rodando em um container separado (no local ou na nuvem(AZURE ACR).
 
 2. **Banco de Dados MySQL 8.0**:
-   - O banco de dados MySQL 8.0 será executado no **Azure Container Instances (ACI)** ou em um serviço PaaS de banco de dados, como o **Azure Database for MySQL**.
+   - O banco de dados MySQL 8.0 será executado no **Azure Container Instances (ACI)** 
 
 A solução vai permitir rodar a aplicação na nuvem de forma escalável e de fácil manutenção.
 
