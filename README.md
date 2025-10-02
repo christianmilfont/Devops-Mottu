@@ -139,6 +139,14 @@ Outras configurações:
 O restante das configurações está OK para o seu cenário, especialmente a configuração do Flyway para migrações de banco de dados e as propriedades do JPA/Hibernate.
 
 # Passo a Passo para Implementação no Azure
+- é necessario registrar sua conta no ACI e ACR do Azure:
+- Registrar os providers necessários
+
+O ACI e o ACR dependem de alguns providers do Azure. Execute:
+```
+az provider register --namespace Microsoft.ContainerInstance
+az provider register --namespace Microsoft.ContainerRegistry
+```
 
 Agora que a aplicação está funcionando localmente, podemos enviá-la para o Azure Container Registry (ACR) e rodá-la no Azure Container Instances (ACI).
 
