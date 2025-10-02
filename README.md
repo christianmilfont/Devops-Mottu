@@ -1,10 +1,24 @@
 # Projeto DevOps - Implementação de Aplicação Java Spring com Docker, MySQL e Azure
-
+## Grupo:
+- Christian Milfont Rm555345
+- Iago Victor Rm558450
 ## Descrição do Projeto
 
 Este projeto tem como objetivo implementar uma aplicação Java Spring Boot com o banco de dados MySQL 8.0, utilizando Docker e Docker Compose para containerização e orquestração dos serviços. A aplicação será configurada para rodar na nuvem, usando o **Azure Container Instances (ACI)** para execução do container da aplicação e **Azure Container Registry (ACR)** para armazenar a imagem Docker da aplicação.
 
 ## Arquitetura da Solução
+<img width="775" height="284" alt="image" src="https://github.com/user-attachments/assets/8ac7c722-d13d-4604-a48c-acf3e14e8f79" />
+Utilizando o formato C4 Architect para formular nossa aquitetura da aplicação
+---
+Agora apresentando cada passo desde Context até Code
+<img width="686" height="565" alt="image" src="https://github.com/user-attachments/assets/c49e6c9a-817a-4820-bfce-70a06411c0a0" />
+
+<img width="615" height="496" alt="image" src="https://github.com/user-attachments/assets/8271e3ff-af96-4ed4-bb61-2115b0dbe8e1" />
+- Lembrando que:
+<img width="712" height="373" alt="image" src="https://github.com/user-attachments/assets/f7d66dfd-5999-43d5-8170-54f3f639e199" />
+
+<img width="482" height="302" alt="image" src="https://github.com/user-attachments/assets/2fd4de71-b074-4d7a-ae2a-2764dd0c52ee" />
+<img width="839" height="459" alt="image" src="https://github.com/user-attachments/assets/78868416-0111-4679-b73d-e4f08d126560" />
 
 A arquitetura da solução é composta por dois componentes principais:
 
@@ -66,6 +80,10 @@ Antes de rodar a aplicação, é necessário ter o **Docker**, **Docker Compose*
        git clone https://github.com/seu-usuario/projeto-devops.git
        cd projeto-devops
    ```
+   - Lembrando que é necessário criar o .jar da aplicação!
+   ```
+   mvn clean package
+   ```
 ## Construir a Imagem da Aplicação:
     ```bash
        docker build -t myapp .
@@ -107,12 +125,17 @@ O restante das configurações está OK para o seu cenário, especialmente a con
 
 Agora que a aplicação está funcionando localmente, podemos enviá-la para o Azure Container Registry (ACR) e rodá-la no Azure Container Instances (ACI).
 
-# Criar um Azure Container Registry (ACR) e (ACI) automatizado com arquivo .sh para deploy:
-```bash
+1. **Clone o Repositório**:
+
+   ```bash
        git clone https://github.com/seu-usuario/projeto-devops.git
        cd projeto-devops
    ```
-Abra o Git Bash no local da pasta 
+   - Lembrando que é necessário criar o .jar da aplicação!
+   ```
+   mvn clean package
+   ```
+Após isso abra o Git Bash no local da pasta 
 
 Execute:
 ```
