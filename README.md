@@ -6,6 +6,8 @@
 
 Este projeto tem como objetivo implementar uma aplicação Java Spring Boot com o banco de dados MySQL 8.0, utilizando Docker e Docker Compose para containerização e orquestração dos serviços. A aplicação será configurada para rodar na nuvem, usando o **Azure Container Instances (ACI)** para execução do container da aplicação e **Azure Container Registry (ACR)** para armazenar a imagem Docker da aplicação.
 
+## Nossa aplicação no repositório https://github.com/christianmilfont/Java-Mottu.git está com todos os arquivos necessários para criação! Justamente como utilizamos o Repackage dentro do pom.xml, ele engloba nosso arquivo .sql que criamos dentro de resources da pasta de Java.
+
 ## Arquitetura da Solução
 <img width="775" height="284" alt="image" src="https://github.com/user-attachments/assets/8ac7c722-d13d-4604-a48c-acf3e14e8f79" />
 Utilizando o formato C4 Architect para formular nossa aquitetura da aplicação
@@ -42,7 +44,7 @@ A solução vai permitir rodar a aplicação na nuvem de forma escalável e de f
 - **Azure Container Registry (ACR)** (Armazenamento das imagens Docker)
 - **Azure Container Instances (ACI)** (Execução de containers na nuvem)
 
-## Benefícios para o Negócio
+## Benefícios para o Negócio  Utilizando a aplicação na nuvem (Docker ou ACR + ACI)
 
 ### 1. **Escalabilidade**:
    - A aplicação pode ser facilmente escalada para atender a maiores volumes de tráfego. A utilização de ACI permite aumentar a capacidade de execução de containers conforme a demanda.
@@ -77,8 +79,8 @@ Antes de rodar a aplicação, é necessário ter o **Docker**, **Docker Compose*
 1. **Clone o Repositório**:
 
    ```bash
-       git clone https://github.com/seu-usuario/projeto-devops.git
-       cd projeto-devops
+       git clone https://github.com/christianmilfont/Java-Mottu.git
+       cd Java-Mottu
    ```
    - Lembrando que é necessário criar o .jar da aplicação!
    ```
@@ -98,7 +100,7 @@ Exemplo de POST (inserir um usuário):
     ```bash
         curl -X POST http://localhost:8080/api/users \
           -H "Content-Type: application/json" \
-          -d '{"name": "John", "email": "john@example.com"}'
+          -d '{"name": "John", "email": "john@example.com", "role": "USER"}'
     ```
 ## Verificar os Containers em Execução e parar:
     ```bash
@@ -128,7 +130,7 @@ Agora que a aplicação está funcionando localmente, podemos enviá-la para o A
 1. **Clone o Repositório**:
 
    ```bash
-       git clone https://github.com/seu-usuario/projeto-devops.git
+       git clone https://github.com/christianmilfont/Java-Mottu.git
        cd projeto-devops
    ```
    - Lembrando que é necessário criar o .jar da aplicação!
