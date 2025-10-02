@@ -10,19 +10,34 @@ Este projeto tem como objetivo implementar uma aplicação Java Spring Boot com 
 
 ## Arquitetura da Solução
 <img width="775" height="284" alt="image" src="https://github.com/user-attachments/assets/8ac7c722-d13d-4604-a48c-acf3e14e8f79" />
-Utilizando o formato C4 Architect para formular nossa aquitetura da aplicação
+
+## Utilizando o formato C4 Architect para formular nossa aquitetura da aplicação
+
 ---
-Agora apresentando cada passo desde Context até Code
+
+### Agora apresentando cada passo desde Context até Code
+
 <img width="686" height="565" alt="image" src="https://github.com/user-attachments/assets/c49e6c9a-817a-4820-bfce-70a06411c0a0" />
+   
+---
 
 <img width="615" height="496" alt="image" src="https://github.com/user-attachments/assets/8271e3ff-af96-4ed4-bb61-2115b0dbe8e1" />
-- Lembrando que:
+
+---
+
+### Lembrando que:
+
 <img width="712" height="373" alt="image" src="https://github.com/user-attachments/assets/f7d66dfd-5999-43d5-8170-54f3f639e199" />
 
+---
+
 <img width="482" height="302" alt="image" src="https://github.com/user-attachments/assets/2fd4de71-b074-4d7a-ae2a-2764dd0c52ee" />
+
+---
+
 <img width="839" height="459" alt="image" src="https://github.com/user-attachments/assets/78868416-0111-4679-b73d-e4f08d126560" />
 
-A arquitetura da solução é composta por dois componentes principais:
+### A arquitetura da solução é composta por dois componentes principais:
 
 1. **Aplicação Java Spring Boot**:
    - A aplicação Java Spring Boot será empacotada em um container Docker.
