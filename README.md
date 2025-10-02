@@ -6,7 +6,7 @@
 
 Este projeto tem como objetivo implementar uma aplicação Java Spring Boot com o banco de dados MySQL 8.0, utilizando Docker e Docker Compose para containerização e orquestração dos serviços. A aplicação será configurada para rodar na nuvem, usando o **Azure Container Instances (ACI)** para execução do container da aplicação e **Azure Container Registry (ACR)** para armazenar a imagem Docker da aplicação.
 
-## Nossa aplicação no repositório https://github.com/christianmilfont/Java-Mottu.git está com todos os arquivos necessários para criação! Justamente como utilizamos o Repackage dentro do pom.xml, ele engloba nosso arquivo .sql que criamos dentro de resources da pasta de Java.
+## Nossa aplicação no repositório https://github.com/christianmilfont/Java-Mottu está com todos os arquivos necessários para criação! Justamente como utilizamos o Repackage dentro do pom.xml, ele engloba nosso arquivo .sql que criamos dentro de resources da pasta de Java.
 
 ## Arquitetura da Solução
 <img width="775" height="284" alt="image" src="https://github.com/user-attachments/assets/8ac7c722-d13d-4604-a48c-acf3e14e8f79" />
